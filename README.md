@@ -56,3 +56,17 @@ Model has been trained using google colab : https://colab.research.google.com/, 
     <img src="img/loss.png" alt="hi" class="inline" height = 45% width = 45% />
   </p>
 </p>
+
+<p>
+  <h2> Usage </h2>
+    
+  To predict face emotion from webcam's frame:
+  ``` python 
+  python predict_webcam.py
+  ```
+  
+  To predict face emotion from local image
+  ``` python 
+  python predict_image.py -p path_to_image:
+  ```
+</p>
