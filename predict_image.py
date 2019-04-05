@@ -37,10 +37,10 @@ def predict_emotion():
     args = vars(parser.parse_args())
 
     # Load face classifier 
-    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
+    face_cascade = cv2.CascadeClassifier('model/haarcascade_frontalface_alt.xml')
 
     # Load keras model
-    model = load_model("model.h5")
+    model = load_model("model/model.h5")
 
     # Load an color image in grayscale
     img = cv2.imread(args['path'])

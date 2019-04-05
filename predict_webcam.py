@@ -33,10 +33,10 @@ def get_emotion(list_proba):
 def predict_emotion():
 
     # Load face classifier
-    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
+    face_cascade = cv2.CascadeClassifier('model/haarcascade_frontalface_default.xml')
 
     # Load keras model
-    model = load_model("model.h5")
+    model = load_model("model/model.h5")
 
     cap = cv2.VideoCapture(0)
 
