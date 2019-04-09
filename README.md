@@ -24,6 +24,13 @@ Real time emotion recognition can be run from docker. First, build the image :
 docker build -t emotion-recognition .
 ```
 
+Add X11 authority :
+```
+xhost + local:docker
+```
+
+
+
 Run the project with pre-trained model :
 
 ```
